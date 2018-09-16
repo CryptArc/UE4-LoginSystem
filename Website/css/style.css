@@ -1,0 +1,201 @@
+*{
+	font-family: Ubuntu, Calibri, "Liberation Sans";
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	text-decoration:none;
+	color:#ccc;
+	box-sizing: border-box;
+}
+
+a:hover,input[type=submit]:hover{
+	color:#fff;
+}
+
+body{
+	max-width:1080px;
+	margin:0 auto;
+	padding:20px 20px 38px 20px;
+	background:#202020;
+	display:grid;
+	grid-template-columns:repeat(4,1fr);
+	grid-template-rows:repeat(5,auto);
+}
+
+header{
+	grid-row:1;
+	grid-column:1/-1;
+}
+
+nav{
+	grid-row:2;
+	grid-column:1/2;
+	display:flex;
+}
+
+#login{
+	grid-row:2;
+	grid-column:2/-1;
+}
+
+main{
+	grid-row:3;
+	grid-column:1/-1;
+	border: 1px solid #262626;
+	padding: 20px 10px;
+	min-height: calc(100vh - (142px + 38px));
+}
+
+aside{
+	grid-row:4;
+	grid-column:1/-1;
+	display:flex; /* Anchor height */
+	padding: 10px;
+}
+
+footer{
+	grid-row:5;
+	grid-column:1/-1;
+	padding: 10px;
+}
+
+#status{
+	position: fixed;
+	bottom:0;
+	left:0;
+	width: 100%;
+	background: #202020;
+	border-top:1px solid #333;
+	padding:8px 20px;
+	display: inline;
+	text-align: center;
+	height:38px;
+	
+}
+
+a,button,input[type=submit]{
+	/* Make clickable things more visible */
+	cursor:pointer!important;
+	transition: all .15s ease-in-out;
+}
+
+/* RESOLUTION */
+@media only screen and (max-width: 360px) {
+/* Xperia XZ Premium Portrait */
+	
+}
+@media only screen and (max-width: 640px) {
+	
+	nav,aside,#login,footer{
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+
+	nav{
+		grid-column:1/-1;
+	}
+
+	#login{
+		max-width:300px;
+		grid-row:5;
+		grid-column:1/-1;
+		margin:0 auto;
+		padding: 0 10px;
+	}
+	
+	#login input:not([type=submit]){
+		width:34.4%;
+	}
+	
+	footer{
+		grid-row:6;
+	}
+	
+}
+
+@media only screen and (min-width: 641px) {
+/* Desktop */
+	
+	#login{
+		text-align:right;
+	}
+	
+	#login input[type=submit]{
+		border:0;
+	}
+	
+}
+
+
+
+/* STYLE */
+
+/*nav*/
+
+nav > a, nav > div,#login a, #login input{
+	color:#ccc;
+	padding:10px 4px;
+	font-size: 16px;
+	background: #00000000;
+}
+
+nav div ul{
+	display: none;
+	list-style: none;
+	position: absolute;
+	z-index: 1;
+	background: #202020;
+	border:1px solid #ccc;
+	padding: 6px;
+	
+}
+
+nav li{
+	padding:2px;
+}
+
+nav div:hover ul{
+	display:block;
+}
+
+/* login */
+
+#login a{
+	white-space: nowrap;
+}
+
+#login input:not([type=submit]){
+	background:#00000000;
+	padding:2px 6px;
+	margin:0 4px;
+	border:1px solid #ccc;
+	font-size: 12px;
+}
+
+/* aside */
+
+aside a{
+	display:inline-block;
+}
+
+aside a img{
+	display:block;
+}
+
+aside{
+	justify-content: center;
+}
+
+/* footer */
+
+footer a{
+	float: right;
+}
+
+/* main */
+
+main h1{
+	margin:0 0 12px 0;
+}

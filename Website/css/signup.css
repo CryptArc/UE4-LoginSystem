@@ -1,0 +1,49 @@
+.signup-form {
+	margin:0 auto;
+	max-width: 500px;
+}
+
+.signup-form h1{
+	margin-bottom: 12px;
+}
+
+.signup-form form{
+	max-width: 300px;
+	margin:0 auto;
+}
+
+.signup-form  fieldset:not(:last-child){
+	margin-bottom: 24px;
+}
+
+.signup-form input {
+  margin:2px 0;
+  color:#777;
+  border:1px solid #ccc;
+  box-sizing:border-box;
+  width: 100%;
+}
+
+.signup-form input,
+.signup-form input[type=submit] {
+  transition: all .15s ease-in-out;
+  outline:none;
+  background:rgba(0, 0, 0, 0.0);
+  padding:4px;
+}
+
+.signup-form input:hover,
+.signup-form input:focus,
+main form input[type=submit]:hover {
+  border-color:#fff;
+  color:#fff;
+}
+
+.signup-form details{
+	margin-top:16px;
+}
+
+.signup-form ul{
+	list-style-type:"*";
+	padding: 0 21px;
+}

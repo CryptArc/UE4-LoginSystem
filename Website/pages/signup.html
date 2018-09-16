@@ -1,0 +1,26 @@
+<section class="signup-form">
+	<h1>Sign up</h1>
+	<form action="/sys/signup.sys.php" method="POST">
+		<fieldset>
+			<legend>Required</legend>
+			<input type="text" name="uid" placeholder="Username" required>
+			<input type="password" name="pwd" placeholder="Password" required>
+			<input type="text" name="email" placeholder="E-mail" required>
+		</fieldset>
+		<fieldset>
+			<legend>Optional</legend>
+			<input type="text" name="firstname" placeholder="Firstname">
+			<input type="text" name="lastname" placeholder="Lastname">
+		</fieldset>
+		<input type="submit" name="submit">
+	</form>
+	<details>
+		<summary>More details</summary>
+		<ul>
+			<li>Login - This Login name will be used for logging into your account. Your Login is private and won't be shown anywhere.</li>
+			<li>Username - Only letters and numbers are allowed. [A-Z a-z 0-9]</li>
+			<li>Password - All characters allowed, use symbols for more security.<br></li>
+		</ul>
+	</details>
+	
+</section>
