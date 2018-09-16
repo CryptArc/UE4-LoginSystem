@@ -6,8 +6,3 @@ Languages:
 - Blueprint
 - PHP
 - SQL
-
-Install?
-Copy and paste the "LoginSystem" folder into your Content folder, where your project is saved.
-
-You need to upload the website files on a hosting server or use xampp.
