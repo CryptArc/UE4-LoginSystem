@@ -1,6 +1,6 @@
 <?php
 $redirect = 'https://g1k777.com';
-$ip = $_SERVER['REMOTE_ADDR'];
+$ip = 'You need to make this yourself sorry.';
 if(!isset($_POST['submit']) && empty($_SESSION['loggedIn'])){
 	echo '(͠≖ ͜ʖ͠≖) '.$ip;
 	exit();
