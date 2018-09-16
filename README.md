@@ -5,4 +5,7 @@ A OpenSource and Free Login System for Unreal Engine 4 protected by the Free GNU
 Languages:
 - Blueprint
 - PHP
+- HTML5
+- CSS3
+- Javascript / Jquery
 - SQL
